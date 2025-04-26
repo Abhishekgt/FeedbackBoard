@@ -1,0 +1,56 @@
+body.light {
+    background: #ffffff;
+    color: #000000;
+}
+
+body.dark {
+    background: #2c2c2c;
+    color: #ffffff;
+}
+
+.feedback-form, .feedback-list {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.feedback-form input, .feedback-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.feedback-form button, .theme-toggle {
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.feedback-card {
+    background: #f4f4f4;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-card button {
+    align-self: flex-end;
+}
+
+
+.feedback-form input:hover, .feedback-form textarea:hover {
+    border: 1px solid #555;
+}
+
+.feedback-form input:focus, .feedback-form textarea:focus {
+    outline: 2px solid #333;
+}
+
+
+@media (max-width: 600px) {
+    .feedback-form, .feedback-list {
+        padding: 10px;
+    }
+}
+
