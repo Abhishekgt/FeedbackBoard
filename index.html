@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Board</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+   
+    <script type="text/babel" src="./FeedbackForm.js"></script>
+    <script type="text/babel" src="./FeedbackItem.js"></script>
+    <script type="text/babel" src="./FeedbackList.js"></script>
+    <script type="text/babel" src="./ThemeToggle.js"></script>
+    <script type="text/babel" src="./index.js"></script>
+    <script type="module">
+       
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-analytics.js";
+        
+        const firebaseConfig = {
+          apiKey: "AIzaSyBtdbSlx6lw3_iH77HSRB-_EF994qvsBnE",
+          authDomain: "feedbackboard-54058.firebaseapp.com",
+          projectId: "feedbackboard-54058",
+          storageBucket: "feedbackboard-54058.firebasestorage.app",
+          messagingSenderId: "724291586897",
+          appId: "1:724291586897:web:02e61c655a3cd8037be170",
+          measurementId: "G-06KCGGSVJW"
+        };
+      
+        
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>
